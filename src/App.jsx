@@ -1,8 +1,15 @@
 import React from 'react'
+import Header from './Containers/Header.jsx'
+import {BrowserRouter as Router,Switch,Route} from "react-router-dom"
+import ProductListing from './Containers/ProductListing.jsx'
+import ProductsDetails from './Containers/ProductsDetails.jsx'
 
 const App = () => {
   return (
-    <div> <h1>App</h1></div>
+    <Router>
+      <Header/>
+      <ProductListing/>
+    </Router>
   )
 }
 

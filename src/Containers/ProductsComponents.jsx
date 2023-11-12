@@ -2,8 +2,8 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 const ProductsComponents = () => {
-  const products = useSelector((state) => state.allProducts);
-  const { id, title } = products.length > 0 ? products[0] : {};
+  const products = useSelector((state) => state.allProducts.products);
+
 
   return (
     <div className="four column wide">
@@ -14,7 +14,7 @@ const ProductsComponents = () => {
           </div>
           <div className="content">
             <div className="header">
-              {title}
+aaa
             </div>
           </div>
         </div>

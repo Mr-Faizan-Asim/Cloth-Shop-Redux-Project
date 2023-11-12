@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 const ProductsComponents = () => {
   const products = useSelector((state) => state.allProducts.products);
     
-  const renderList = products.data.map((product)=> {
+  const renderList = products.map((product)=> {
      const {id,title,image,price,category} = product;
         return (
             <div className="four column wide" key={id}>

@@ -10,11 +10,11 @@ const ProductListing = () => {
   const dispath = useDispatch()
   const fetchProducts = async() => {
     const response = await axios
-    .get("https://fakestoreapi.com/products")
+    .get('https://fakestoreapi.com/products')
     .catch((err)=>{
     console.log(err);
     })
-    dispath(setProducts(response))
+    dispath(setProducts(response.data))
   };
   useEffect(()=>{
     fetchProducts();
